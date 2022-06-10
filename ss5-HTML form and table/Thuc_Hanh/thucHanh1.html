@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form cơ bản</title>
+</head>
+<body>
+<form action="thucHanh1.html" method="get" class="wufoo">
+    <h1>Oder Form</h1>
+    <p>What would you like to buy</p>
+    <select name="choose">
+        <option value=" ">A</option>
+        <option>B (+ 0.5$)</option>
+        <option>c (+ 0.5$)</option>
+    </select>
+    <p>How many would you like to order</p>
+    <input type="radio" name="rd">1 - $10 </br>
+    <input type="radio" name="rd">2 - $20 </br>
+    <input type="radio" name="rd">3 - $25 </br>
+
+    <p>Name<span style="color: red">*</span></p>
+    <input type = "text" name="firstname" placeholder="FirstName" size="15"/>
+    <input type = "text" name="lastname" placeholder="LastName" size="15"/>
+
+    <p>Email <span style="color: red">*</span> </p>
+    <input type="text" name="email" size="36">
+
+    <p>Phone Number <span style="color: red">*</span> </p>
+    <input type="text" name="phone1" size="5"> -
+    <input type="text" name="phone2" size="5"> -
+    <input type="text" name="phone3" size="5">
+
+    <p><input type="submit" name="btsubmit" value="submit"></p>
+
+    <style>
+        .wufoo{
+            font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+    </style>
+</form>
+</body>
+</html>
