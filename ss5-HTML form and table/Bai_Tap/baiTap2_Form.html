@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form lấy survey khách hàng</title>
+</head>
+<body>
+<form action="baiTap2_Form.html" method="get" class="container"></form>
+<h1>Market Research Survey</h1>
+<p>Please take a few momments to complete this satisfaction survey</p>
+<hr width="100%" align="center">
+<h4>What is your age range?</h4>
+<select name="age" style="width: 500px">
+    <option value="a1"> 18-24</option>
+    <option value="a2"> 25-34</option>
+    <option value="a3"> 35-50</option>
+    <option value="a4"> 50+</option>
+</select>
+<h4>What is your yearly incom range?</h4>
+<select name="income" style="width: 500px">
+    <option value="i1"> $0-$25,000</option>
+    <option value="i2"> $25,001-$50,000</option>
+    <option value="i3"> $50,0001-$100,000</option>
+    <option value="i4"> $100,000+</option>
+</select>
+<h4>Gender Identity</h4>
+<input type="radio" name="male"> Male <br>
+<input type="radio" name="female"> Female <br>
+<input type="radio" name="non"> Nonbinary <br>
+<input type="radio" name="other"> Other
+
+<h4>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h4>
+<input type="checkbox" name="product1"> Product 1 <br>
+<input type="checkbox" name="product2"> Product 2 <br>
+<input type="checkbox" name="product3"> Product 3
+<h4>How often would you use our new product?</h4>
+<input type="radio" name="time"> Daily <br>
+<input type="radio" name="time"> Weekly <br>
+<input type="radio" name="time"> Monthly
+<h4>What would you pay for the new product</h4>
+$ <input type="text" name="pay" size="5"> .
+<input type="text" name="pay" size="1">
+<h4>What features would you to see in the new product.</h4>
+<textarea rows="10" cols="50" style="width: 500px">Text.............</textarea>
+<p>Please rate your level of agreement with the following statements.</p>
+<table name="rate" border="1">
+    <tr style="background-color: blanchedalmond">
+        <th></th>
+        <th>Strongly</th>
+        <th>Disagree</th>
+        <th>Agree</th>
+    </tr>
+    <tr>
+        <th>Our products are priced fairly.</th>
+        <td style="text-align: center">
+            <input type="radio" name="h11"> <br>1
+        </td>
+        <td style="text-align: center">
+            <input type="radio" name="h12"> <br>2
+        </td>
+        <td style="text-align: center">
+            <input type="radio" name="h13"> <br>3
+        </td>
+    </tr>
+    <tr style="background-color: blanchedalmond">
+        <th>Our products are high quality.</th>
+        <td style="text-align: center">
+            <input type="radio" name="h21"> <br>1
+        </td>
+        <td style="text-align: center">
+            <input type="radio" name="h22"> <br>2
+        </td>
+        <td style="text-align: center">
+            <input type="radio" name="h23"> <br>3
+        </td>
+    </tr>
+    <tr>
+        <th>You would recommend our product to a friend or coworker.</th>
+        <td style="text-align: center">
+            <input type="radio" name="h31"><br>1
+        </td>
+        <td style="text-align: center">
+            <input type="radio" name="h32"> <br>2
+        </td>
+        <td style="text-align: center">
+            <input type="radio" name="h33"> <br>3
+        </td>
+    </tr>
+</table> <br>
+<input type="submit" value="Submit">
+</body>
+</html>

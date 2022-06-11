@@ -1,0 +1,40 @@
+
+h1{
+    text-align: center;
+}
+
+.title{
+    color: #0433FF ;
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.til{
+    background-color: yellow;
+}
+
+.day{
+    background: #FFB300;
+}
+
+
+td,th{
+    padding: 20px;
+    border: 1px solid black;
+}
+
+
+.infor .left{
+    float: left;
+    color: #6A85FE;
+}
+
+.infor .right{
+    float: right;
+    color: #6A85FE;
+}

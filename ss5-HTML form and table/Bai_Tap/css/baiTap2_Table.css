@@ -1,0 +1,82 @@
+ .container{
+     background-color: #FFB300 ;
+  width:  510px;
+  height: 540px;
+ }
+
+
+ .table{
+  width:  500px;
+  height: 500px;
+ }
+
+ th, td{
+  padding: 20px;
+ }
+
+
+ .a{
+  background-color: white;
+ }
+
+ .b{
+  background-color: black;
+ }
+
+/*CSS form số 2*/
+
+table{
+  width: 100%;
+ text-align: center;
+}
+
+
+.num{
+ border: 2px solid #ABABAB;
+}
+ .num1{
+  border: 2px solid #ABABAB;
+  color: red;
+ }
+ .num2{
+  border: 2px solid #ABABAB;
+  color: #0433FF;
+ }
+
+
+
+
+
+.lich{
+ width: 1000px;
+ height: 600px;
+}
+h1{
+ text-align: center;
+ color: #0433FF;
+}
+.CN{
+ background-color: red;
+ color: white;
+ border: 2px solid white;
+}
+.TT{
+ background-color: #FFB300;
+ color: white;
+ border: 2px solid white;
+}
+.TB{
+ background-color: #0433FF ;
+ color: white;
+ border: 2px solid white;
+}
+
+.CCN{
+ color: red;
+}
+.CTB{
+ color: #0433FF;
+}
+.a{
+ color: black;
+}

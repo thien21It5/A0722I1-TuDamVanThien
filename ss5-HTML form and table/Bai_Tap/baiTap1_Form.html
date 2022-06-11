@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo form đơn giản</title>
+    <style>
+        .container {
+            border: solid 10px #4effee;
+            width:  500px;
+            height: 300px;
+        }
+
+        .title {
+            text-align: center;
+            color: white;
+            background-color: coral;
+        }
+        .cc{
+            color: blue;
+        }
+        .hobby{
+            color: darkorange;
+        }
+
+
+
+
+
+        .tttt {
+            border: solid;
+            background-color: #FFFDA9;
+            width: 500px;
+            height: 500px;
+        }
+
+        .div1{
+            background-color: #4effee;
+        }
+
+        .h1 {
+            color: blue;
+        }
+        th{
+            color: darkblue;
+        }
+
+    </style>
+</head>
+<body>
+<form action="baiTap1_Form.html" method="get" class="container">
+    <div class="title">
+        <h1>SỞ THÍCH CỦA BẠN</h1>
+    </div>
+    <table class="body">
+        <tr>
+            <th class="cc">
+                Họ và tên:
+            </th>
+            <td>
+                <input type="text" name="yourname" size="35">
+            </td>
+        </tr>
+        <tr>
+            <th class="cc">
+                Email:
+            </th>
+            <td>
+                <input type="text" name="email" size="25">
+            </td>
+        </tr>
+        <tr>
+            <th rowspan="3" class="cc">
+                Sở thích:
+            </th>
+            <td class="hobby">
+                <input type="checkbox" name="hobby" > Thể thao
+                <input type="checkbox" name="hobby" > Âm nhạc
+                <input type="checkbox" name="hobby" > Đọc sách
+            </td>
+
+        <tr>
+            <td class="hobby">
+                <input type="checkbox" name="hobby" > Lướt Web
+                <input type="checkbox" name="hobby" > Chơi game
+                <input type="checkbox" name="hobby" > Điện ảnh
+            </td>
+        </tr>
+        <tr>
+            <td class="hobby">
+                <input type="checkbox" name="hobby" > Du lịch
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td >
+                <input type="submit"  value="Gửi thông tin">
+                <input type="reset" value="Nhập lại">
+            </td>
+
+
+
+        </tr>
+
+
+    </table>
+
+</form>
+<br>
+<br>
+<br>
+<!--Form số 2-->
+<br>
+<br>
+<br>
+<div class="tttt">
+    <form action="baiTap1(2)_Form.html" method="get">
+        <div class="div1">
+            <h1 class="h1">ĐĂNG KÝ HỌC VIÊN</h1>
+        </div>
+        <table >
+            <tr>
+                <th>
+                    Họ và tên
+                </th>
+                <td>
+                    <input type="text" name="name" placeholder="Nhập họ và tên" size="35px">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Ngày sinh
+                </th>
+                <td>
+                    <input type="text" name="date" placeholder="Nhập ngày sinh" size="15">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Giới tính
+                </th>
+                <td>
+                    <input type="radio" name="gender">Nam
+                    <input type="radio" name="gender">Nữ
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Địa chỉ
+                </th>
+                <td>
+                    <textarea cols="50" rows="4">Nhập địa chỉ</textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Lớp
+                </th>
+                <td>
+                    <select name="class">
+                        <option value="empty">-Chọn lớp-</option>
+                        <option value="l1">21IT1</option>
+                        <option value="l2">21IT2</option>
+                        <option value="l3">21IT3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Email
+                </th>
+                <td>
+                    <input type="text" name="email" placeholder="Nhập Email" size="20">
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Điện thoại
+                </th>
+                <td>
+                    <input type="text" name="phone" placeholder="Nhập số điện thoại" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Đăng ký">
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</div>
+
+
+</body>
+</html>
