@@ -6,7 +6,7 @@ function mouseover(){
     document.getElementById("demo").style.color="red";
 }
 function mouseout(){
-    document.getElementById("demo").style.color="blue"
+    document.getElementById("demo").style.color="blue";
 }
 function clickFunction(){
     alert("Bài số 2 của phần Table");
