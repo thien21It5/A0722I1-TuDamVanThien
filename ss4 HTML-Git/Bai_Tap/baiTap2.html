@@ -5,14 +5,16 @@
     <title>Tạo CV</title>
 </head>
 <body>
-<h1>CV</h1>
+<h1 id="cv">CV</h1>
 <p>Họ và Tên: Từ Đàm Văn Thiên</p>
 <p>Địa chỉ: Sao Hỏa</p>
 <p>Số điện thoại: 000-888-999</p>
 <p> Email:
 <a href="https://www.google.com/intl/vi/gmail/about/" target="_blank">ttttt1@gmail.com</a>
 </p>
-<img src="image/kamenrider.jpg" alt="" style="width: 150px; height: 170px">
+<button onclick="document.getElementById('myImage').src='https://scontent.fsgn2-4.fna.fbcdn.net/v/t1.6435-9/102261488_3013160935447101_2486117098089648848_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rBq5yAVpXHMAX-wvmCk&_nc_ht=scontent.fsgn2-4.fna&oh=00_AT_WSC1XNu7bwFArfiuwJwGLBZ_x-97BLtj0vFuaL5MSfQ&oe=62CC376E'">Next</button>
+<img id="myImage" src="image/kamenrider.jpg" style="width: 150px; height: 170px">
+<button onclick="document.getElementById('myImage').src='image/kamenrider.jpg'">Return</button>
 <p>Học vấn: Siêu giỏi</p>
 <p>Bằng cấp:
     <a href="https://ajc.hcma.vn/Uploaded/admin/2018_04_09/scan0311.jpg" target="_blank">
@@ -22,6 +24,17 @@
 <p>Kỹ năng: Lập trình viên</p>
 <p>Kinh nghiệm: 100 năm trong nghề</p>
 <p>Định hướng phát triển cá nhân:
-<a href="https://static.wikia.nocookie.net/kamenrider/images/9/9b/KRDCD-Decade.png/revision/latest?cb=20190920153806" target="_blank">Trở thành Kamen Rider</a> </p>
+<a href="https://kamenrider.us/storage/images/kamen-rider-wizard.png" target="_blank">Trở thành Kamen Rider</a> </p>
 </body>
 </html>
+<script>
+var cv=document.getElementById("cv");
+    cv.addEventListener("mouseover",mouseover);
+    cv.addEventListener("mouseout",mouseout);
+function mouseover(){
+    document.getElementById("cv").style.color="red";
+}
+function mouseout(){
+    document.getElementById("cv").style.color="black";
+}
+</script>
