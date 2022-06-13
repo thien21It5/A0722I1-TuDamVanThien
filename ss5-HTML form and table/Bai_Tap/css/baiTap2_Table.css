@@ -80,3 +80,8 @@ h1{
 .a{
  color: black;
 }
+.m td:hover{
+ background-color: pink;
+ font-weight: bold;
+ color: black;
+}
