@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhúng JavaScript</title>
+</head>
+<body>
+<!--Bài tập 1: Tạo một trang web với một nút.
+Chèn mã Javascript vào trong thẻ <button> để hiển thị một
+lời chào khi người dùng nhấn chuột vào nút đó.-->
+<p>Tạo một trang web với một nút</p>
+<button type="button" onclick="alert('Xin chào. Tôi là học sinh của CodeGym!!!');showMessage()">Click Me!!</button>
+<br>
+<br>
+<!--Bài tập 2: Tạo một trang web với một nút. Sử dụng thẻ <script> và
+khai báo một hàm đơn giản. Gọi hàm này khi người dùng nhấn chuột vào nút.-->
+<p>Tạo một trang web với một nút</p>
+<button type="button" onclick="showMessage2()">Click Me!</button>
+<script>
+    function showMessage2(){
+        alert('Xin Chào!');
+    }
+</script>
+<br>
+<br>
+<!--Bài tập 3: Hãy tách đoạn mã Javascript ở Bài tập 2
+ ra một file Javascript riêng và nhúng vào trang HTML.-->
+<p>Tạo một trang web với một nút</p>
+<div id="showMess">
+<button type="button" onclick="showMessage3();">Click Me!</button>
+</div>
+</body>
+</html>
+<script src="js/thucHanh2.js"></script>
