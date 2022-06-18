@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biến, kiểu dữ liệu và toán tử</title>
+</head>
+<body>
+<h3>Bài 1: Viết chương trình nhập điểm của một sinh viên cho các môn: Vật lý, Hóa học,
+    và Sinh học. Sau đó hiển thị điểm trung bình và tổng của những điểm này.</h3>
+<script>
+    alert("Bài 1:")
+    let physics=prompt("Nhập điểm môn Vật lý: ");
+    let chemystry=prompt("Nhập điểm môn Hóa học: ");
+    let biological=prompt("Nhập điểm môn Sinh học: ");
+
+    //Chuyển các biến thành số thập phân
+    let phys=parseFloat(physics);
+    let che=parseFloat(chemystry);
+    let bio=parseFloat(biological);
+    //Tính tổng  và điểm trung bình ba môn
+    let total= phys+che+bio;
+    let ave=(phys+che+bio)/3;
+    //Xuất giá trị
+    document.write("Tổng điểm 3 môn là: "+total);
+    document.write("<br>");
+    document.write("Điểm trung bình 3 môn là: "+ave.toFixed(2)); //ave.toFixed() để lấy những con số sau dấu phẩy của số thập phân
+
+</script>
+<br>
+<br>
+<h3>Bài 2:  Viết chương trình nhập một giá trị là độ 0C (Celsius) và chuyển
+    nó sang độ 0F (Fahrenheit). [Hướng dẫn: C/5 = (F-32)/9]</h3>
+<script>
+    let x = prompt("Bài 2: Nhập giá trị: ");
+    let cel=parseFloat(x);
+    let fah = (x*5)/9+32;
+    document.write("Giá trị độ 0F là:"+ fah.toFixed(2));
+</script>
+<br>
+<br>
+<h3>Bài 3: Viết chương trình tính chu vi và diện tích hình tròn</h3>
+<script>
+    let y =prompt("Bài 3: Nhập bán kính đường tròn: ");
+    let bk=parseFloat(x);
+    let area=(bk*bk)*3.14;
+    let perimeter=(bk+bk)*3.14;
+    document.write("Diện tích hình tròn là: "+area.toFixed(2));
+    document.write("<br>");
+    document.write("Chu vi hình tròn là: "+perimeter.toFixed(2));
+</script>
+<br>
+<br>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+    <h1>Chuyển đổi tiền tệ</h1>
+    <table id="formTienTe">
+        <tr style="width: 200px">
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            <th></th>
+        </tr>
+        <tr style="width: 200px">
+            <td><input type="text" id="inp" ></td>
+            <td style="width: 200px">
+                <select id="nation" style="margin-left: 60px">
+                <option name="vietNam" value="0">VND</option>
+                <option name="vietNam" value="1">USA</option>
+
+            </select>
+            </td>
+            <td style="width: 200px">
+                <select id="current" style="margin-left: 50px ; width: 100px">
+                    <option name="usd" value="1">USD</option>
+                    <option name="usd" value="0">VND</option>
+
+                </select>
+            </td>
+            <td><button onclick="convert();">Convert</button> </td>
+        </tr>
+        <tr>
+            <td><p id="result"></p></td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
+<script src="js/baiTap2.js"></script>
