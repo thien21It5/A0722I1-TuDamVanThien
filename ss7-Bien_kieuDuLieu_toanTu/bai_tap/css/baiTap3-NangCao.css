@@ -1,0 +1,49 @@
+
+
+.table{
+    width: 700px;
+    height: 300px;
+}
+
+.table th{
+    border: 2px solid white;
+}
+
+
+#result{
+    width: 698px ;
+    height: 52px;
+    text-align: center;
+}
+
+th td{
+    padding: 20px;
+
+}
+
+th{
+    width: 100px;
+    height: 50px;
+}
+
+.w{
+    background-color: #F3F3F3;
+}
+
+.br{
+    background-color: #D4D4D4;
+}
+
+.bl{
+    background-color: #4689FA;
+    color: white;
+}
+
+#cal{
+    color: white;
+}
+ th:hover{
+    background-color: pink;
+    font-weight: bold;
+    color: blue;
+}
