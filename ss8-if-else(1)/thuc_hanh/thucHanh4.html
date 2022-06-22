@@ -27,8 +27,9 @@
 <h1>Bài 2: Viết lại cấu trúc if sau thành cấu trúc switch</h1>
 
 <script>
-    let a=prompt('a?', '');
-    switch (a){
+    let value=prompt('a?', '');
+    let cal=parseInt(value);
+    switch (cal){
         case 0:
             document.write("a = 0");
             break;
@@ -39,6 +40,8 @@
         case 3:
             document.write("a = 2,3");
             break;
+        default:
+            document.write("Undefined")
     }
 </script>
 <br>

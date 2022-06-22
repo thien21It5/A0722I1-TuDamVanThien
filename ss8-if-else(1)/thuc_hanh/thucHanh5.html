@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập với toán tử ba ngôi</title>
+</head>
+<body>
+<h3>Bài 1: Viết chương trình nhập vào giá trị cho a và b. Tính tổng a và b, nếu tổng nhỏ hơn 4,
+    hiển thị chuỗi Below, ngược lại hiển thị Over. Lưu ý sử dụng toán tử ? :</h3>
+
+<script>
+    let a=parseInt(prompt("Nhập số a: "));
+    let b=parseInt(prompt("Nhập số b: "));
+    // if ((a + b) < 4) {
+    //     result = 'Below';
+    // } else {
+    //     result = 'Over';
+    // }
+    result = (a + b < 4) ? 'Below' : 'Over';
+    document.write(result);
+</script>
+<br>
+<br>
+<h3>Bài 2: Viết chương trình nhập vào giá trị cho chuỗi message. </h3>
+<script>
+    let login=prompt("Nhập chuỗi tin nhắn: ")
+    // let message;
+    // if (login == 'Employee') {
+    //     message = 'Hello';
+    // } else if (login == 'Director') {
+    //     message = 'Greetings';
+    // } else if (login == '') {
+    //     message = 'No login';
+    // } else {
+    //     message = '';
+    // }
+
+    let message =(login == 'Employee') ?
+        'Hello!' :
+        (login == 'Director') ?
+            'Greetings' :
+            (login == '') ?
+                'No login' :
+                '';
+    document.write(message);
+</script>
+</body>
+</html>
