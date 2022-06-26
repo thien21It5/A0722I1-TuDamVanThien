@@ -4,27 +4,41 @@
     <meta charset="UTF-8">
     <title>Game puzzle</title>
     <style>
-        #div{
+        table{
             position: absolute;
             left: 300px
         }
     </style>
 </head>
 <body>
-<div id="div">
-    <img src="image/cat1.jpg" id="hinh1" onclick="ani1(hinh);" style="width: 800px; height: 160px">
-    <br>
-    <br>
-    <img src="image/cat2.jpg" id="hinh2" onclick="ani1(hinh);" style="width: 800px; height: 160px">
-    <br>
-    <br>
-    <img src="image/cat3.jpg" id="hinh3" onclick="ani1(hinh);" style="width: 800px; height: 160px">
-    <br>
-    <br>
-    <img src="image/cat4.jpg" id="hinh4" onclick="ani1(hinh);" style="width: 800px; height: 160px">
-    <br>
-    <br>
-    <img src="image/cat5.jpg" id="hinh5" onclick="ani1(hinh);" style="width: 800px; height: 160px">
-</div>
+<table>
+    <tr>
+        <td>
+            <img src="image/cat1.jpg" id="hinh1" onclick="changeImg(1);" style="width: 800px; height: 160px" alt="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="image/panda2.jpg" id="hinh2" onclick="changeImg(2);" style="width: 800px; height: 160px" alt="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="image/cat3.jpg" id="hinh3" onclick="changeImg(3);" style="width: 800px; height: 160px" alt="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="image/monkey4.jpg" id="hinh4" onclick="changeImg(4);" style="width: 800px; height: 160px" alt="">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="image/panda5.jpg" id="hinh5" onclick="changeImg(5);" style="width: 800px; height: 160px" alt="">
+        </td>
+    </tr>
+</table>
 </body>
 </html>
+
+<script src="js/baiTap4.js"></script>

@@ -2,49 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 01</title>
+    <title>[*Bài tập] Luyện tập cấu trúc điều kiện 02</title>
 </head>
 <body>
 <div>
-    <h3>Bài 1: Nhập vào hai số a và b, và kiểm tra xem a có chia hết cho b hay không</h3>
+    <h3>Bài 1: Chuyển từ độ C sang độ F.</h3>
 
-    <input type="text" id="so1" placeholder="Nhập số a">
-    <br>
-    <br>
-    <input type="text" id="so2" placeholder="Nhập số b">
+    <input type="text" id="do" placeholder="Nhập độ oC cần chuyển">
+
     <br>
     <br>
     <button onclick="bai1();">Kiểm tra</button>
     <p id="result1"></p>
 </div>
 
-
 <div>
-    <h3>Bài 2: Nhập tuổi và in ra kết quả nếu tuổi học sinh đó không đủ điều kiện vào học lớp 10.</h3>
+    <h3>Bài 2: Chuyển từ mét sang feet:</h3>
 
-    <input type="text" id="tuoi" placeholder="Nhập số tuổi của bạn">
+    <input type="text" id="met" placeholder="(M)">
+    <br>
+    <br>
     <button onclick="bai2();">Kiểm tra</button>
     <p id="result2"></p>
 </div>
 
 <div>
-    <h3>Bài 3: Nhập một số nguyên bất kỳ và in kết quả ra màn hình để nói cho người dùng biết số đó là lớn hay nhỏ hơn 0</h3>
+    <h3>Bài 3: Tính diện tích hình vuông khi biết cạnh a.</h3>
 
-    <input type="text" id="inter" placeholder="Nhập số nguyên">
+    <input type="text" id="canh" placeholder="Nhập cạnh của hình vuông">
+    <br>
+    <br>
     <button onclick="bai3();">Kiểm tra</button>
     <p id="result3"></p>
 </div>
 
 <div>
-    <h3>Bài 4: Nhập 3 số nguyên và tìm giá trị lớn nhất của ba số nguyên đó</h3>
+    <h3>Bài 4: Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b.</h3>
 
-    <input type="text" id="a" placeholder="Nhập số thứ nhất">
+    <input type="text" id="canhA" placeholder="Nhập cạnh a của hình chữ nhật" style="width: 200px">
     <br>
     <br>
-    <input type="text" id="b" placeholder="Nhập số thứ hai">
-    <br>
-    <br>
-    <input type="text" id="c" placeholder="Nhập số thứ ba">
+    <input type="text" id="canhB" placeholder="Nhập cạnh b của hình chữ nhật" style="width: 200px">
     <br>
     <br>
     <button onclick="bai4();">Kiểm tra</button>
@@ -52,14 +50,12 @@
 </div>
 
 <div>
-    <h3>Bài 5: Xếp hạng học lực của học sinh dựa trên các điểm bài kiểm tra, điểm thi giữa kỳ, điểm thi cuối kỳ</h3>
-    <input type="text" id="dkt" placeholder="Nhập điểm bài kiểm tra">
+    <h3>Bài 5: Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b.</h3>
+
+    <input type="text" id="canh1" placeholder="Nhập cạnh bên a của tam giác vuông" style="width: 250px">
     <br>
     <br>
-    <input type="text" id="dgk" placeholder="Nhập điểm thi giữa kỳ">
-    <br>
-    <br>
-    <input type="text" id="dck" placeholder="Nhập điểm thi cuối kỳ">
+    <input type="text" id="canh2" placeholder="Nhập cạnh bên b của tam giác vuông" style="width: 250px">
     <br>
     <br>
     <button onclick="bai5();">Kiểm tra</button>
@@ -67,8 +63,12 @@
 </div>
 
 <div>
-    <h3>Bài 6: Tính hoa hồng nhận được tuỳ theo mức doanh số bán hàng</h3>
-    <input type="text" id="hh" placeholder="Nhập giá trị tổng doanh số bán hàng">
+    <h3>Bài 6: Giải phương trình bậc 1.</h3>
+
+    <input type="text" id="a" placeholder="Nhập số a">
+    <br>
+    <br>
+    <input type="text" id="b" placeholder="Nhập số b">
     <br>
     <br>
     <button onclick="bai6();">Kiểm tra</button>
@@ -76,123 +76,297 @@
 </div>
 
 <div>
-    <h3>Bài 7: Tính cước điện thoại cho một hộ gia đình với các thông số đã cho</h3>
-    <input type="text" id="phut" placeholder="Nhập số phút đã gọi">
+    <h3>Bài 7: Giải phương trình bậc 2.</h3>
+
+    <input type="text" id="a1" placeholder="Nhập số a">
+    <br>
+    <br>
+    <input type="text" id="b1" placeholder="Nhập số b">
+    <br>
+    <br>
+    <input type="text" id="c1" placeholder="Nhập số b">
     <br>
     <br>
     <button onclick="bai7();">Kiểm tra</button>
     <p id="result7"></p>
 </div>
-<br>
+
+<div>
+    <h3>Bài 8: Kiểm tra xem một số nhập vào có phải là tuổi của một người không.
+        Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.</h3>
+
+    <input type="text" id="tuoi" placeholder="Nhập số nguyên">
+    <br>
+    <br>
+    <button onclick="bai8();">Kiểm tra</button>
+    <p id="result8"></p>
+</div>
+
+<div>
+    <h3>Bài 9: Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác.</h3>
+
+    <input type="text" id="soThuc1" placeholder="Nhập vào số  đầu tiên">
+    <br>
+    <br>
+    <input type="text" id="soThuc2" placeholder="Nhập vào số  thứ hai">
+    <br>
+    <br>
+    <input type="text" id="soThuc3" placeholder="Nhập vào số  thứ ba">
+    <br>
+    <br>
+    <button onclick="bai9();">Kiểm tra</button>
+    <p id="result9"></p>
+</div>
+
+<div>
+    <h3>Bài 10: Viết chương trình tính giá điện.</h3>
+
+    <input type="text" id="dien" placeholder="Nhập số điện của bạn(kWh)" style="width: 200px">
+    <br>
+    <br>
+    <button onclick="bai10();">Kiểm tra</button>
+    <p id="result10"></p>
+</div>
+
+<div>
+    <h3>Bài 11: Viết chương trình tính thuế thu nhập cá nhân.</h3>
+
+    <input type="text" id="thuNhap" placeholder="Nhập số tiền thu nhập của bạn" style="width: 200px;">
+    <br>
+    <br>
+    <button onclick="bai11();">Kiểm tra</button>
+    <p id="result11"></p>
+</div>
+
+<div>
+    <h3>Bài 12: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lãi con) khi biết số tiền
+        ban đầu, số tháng cho vay và lãi xuất hàng tháng.</h3>
+
+    <input type="text" id="tienBanDau" placeholder="Nhập số tiền ban đầu: " style="width: 200px;">
+    <br>
+    <br>
+    <input type="text" id="thang" placeholder="Nhập số tháng cho vay" style="width: 200px;">
+    <br>
+    <br>
+    <input type="text" id="laiXuat" placeholder="Nhập lãi xuất hàng tháng (%)" style="width: 200px;">
+    <br>
+    <br>
+    <button onclick="bai12();">Kiểm tra</button>
+    <p id="result12"></p>
+</div>
 </body>
 </html>
 
 <script>
 //Bài 1:
-function bai1(){
-    let a = parseFloat(document.getElementById('so1').value);
-    let b = parseFloat(document.getElementById('so2').value);
-    let c =a/b;
-    if(a%b==0){
-        document.getElementById('result1').innerHTML="a/b= " + c + ": a chia hết cho b";
-    }else{
-        document.getElementById('result1').innerHTML="a/b= " + c +": a không chia hết cho b";
-    }
-}
 
+    function bai1(){
+        let nhietDo=document.getElementById('do').value;
+        let doF=nhietDo * 9/5 +32;
+        document.getElementById('result1').innerHTML=doF+" oF";
+    }
 //Bài 2:
-function bai2(){
-    let tuoi= parseInt(document.getElementById('tuoi').value);
-    if(tuoi==16){
-        document.getElementById('result2').innerHTML="Bạn đủ tuổi thi vào lớp 10";
-    }else{
-        document.getElementById('result2').innerHTML="Bạn không đủ tuổi thi vào lớp 10";
-    }
-}
 
+    function bai2(){
+        let met=document.getElementById('met').value;
+        let ft= met*3.2808;
+        document.getElementById('result2').innerHTML=ft+ " ft";
+    }
 //Bài 3:
-function bai3(){
-    let inter=parseInt(document.getElementById('inter').value);
-    if(inter>0){
-        document.getElementById('result3').innerHTML=inter + " là số lớn hơn 0";
-    }else if(inter<0){
-        document.getElementById('result3').innerHTML=inter + " là số bé hơn 0";
-    }else{
-        document.getElementById('result3').innerHTML=inter;
+
+    function bai3(){
+        let a=document.getElementById('canh').value;
+        let area=a*a;
+        if(a>0){
+            document.getElementById('result3').innerHTML="Diện tích hình vuông là: "+area;
+        }else{
+            document.getElementById('result3').innerHTML="Errol!!!"
+        }
     }
-
-}
-
 //Bài 4:
-function bai4(){
-    let a=parseInt(document.getElementById('a').value);
-    let b=parseInt(document.getElementById('b').value);
-    let c=parseInt(document.getElementById('c').value);
-    if(a>b){
-        if(a>c){
-            document.getElementById('result4').innerHTML=a+ " là số lớn nhất!";
+
+    function bai4(){
+        let a = document.getElementById('canhA').value;
+        let b = document.getElementById('canhB').value;
+        let area=a*b;
+        if(a>=0 && b>=0){
+            document.getElementById('result4').innerHTML="Diện tích hình chữ nhật là: "+area;
         }else{
-            document.getElementById('result4').innerHTML=c+ " là số lớn nhất!";
-        }
-    }else{
-        if(b>c){
-            document.getElementById('result4').innerHTML=b+ " là số lớn nhất!";
-        }else{
-            document.getElementById('result4').innerHTML=c+ " là số lớn nhất!";
+            document.getElementById('result4').innerHTML="Errol!!!";
         }
     }
-}
-
 //Bài 5:
-function bai5(){
-    let kt= parseFloat(document.getElementById('dkt').value);
-    let gk= parseFloat(document.getElementById('dgk').value);
-    let ck= parseFloat(document.getElementById('dck').value);
-    let x=(kt+gk+ck)/3;
-    if(x>=8){
-        document.getElementById('result5').innerHTML="Điểm tổng kết là: " +x.toFixed(3)+ "và đạt học sinh giỏi!";
-    }else if(x>=6.5){
-        document.getElementById('result5').innerHTML="Điểm tổng kết là: " +x.toFixed(3)+ "và đạt học sinh Khá!";
-    }else if(x>=5){
-        document.getElementById('result5').innerHTML="Điểm tổng kết là: " +x.toFixed(3)+ "và đạt học sinh trung bình!";
-    }else if(x>=3){
-        document.getElementById('result5').innerHTML="Điểm tổng kết là: " +x.toFixed(3)+ "và đạt học sinh yếu!";
-    }else{
-        document.getElementById('result5').innerHTML="Điểm tổng kết là: " +x.toFixed(3)+ "và đạt học sinh kém!"
+    function bai5(){
+        let a=document.getElementById('canh1').value;
+        let b=document.getElementById('canh2').value;
+        let x=(a*b)/2;
+        document.getElementById('result5').innerHTML="Diện tích tam giác vuông là: "+x;
     }
-}
-
 //Bài 6:
-function bai6(){
-    let doanhSo =parseFloat(document.getElementById('hh').value);
-    let hoaHong;
-    if(doanhSo<=100){
-        hoaHong=doanhSo*(5/100);
-        document.getElementById('result6').innerHTML="Bạn nhận được 5% tổng doanh thu với số tiền là: " +hoaHong;
+    function bai6(){
+        let a=document.getElementById('a').value;
+        let b=document.getElementById('b').value;
+        if(a==0){
+            if(b==0){
+                document.getElementById('result6').innerHTML="Phương trình vô số nghiệm";
+            }else{
+                document.getElementById('result6').innerHTML="Phương trình vô nghiệm"
+            }
+        }else{
+            let x=-b/a;
+            document.getElementById('result6').innerHTML="Phương trình có nghiệm: "+x;
+        }
     }
-    if (doanhSo>=300){
-        hoaHong=doanhSo*(10/100);
-        document.getElementById('result6').innerHTML="Bạn nhận được 10% tổng doanh thu với số tiền là:" +hoaHong;
-    }
-}
-
 //Bài 7:
-function bai7(){
-    let soPhut=parseInt(document.getElementById('phut').value);
-    let phiCoDinh=25;
-    let phi;
-    if(soPhut<=50){
-        //600 đồng cho mỗi gọi của 50 phút đầu tiên.
-        phi=soPhut*600+phiCoDinh;
-        document.getElementById('result7').innerHTML="Bạn đã gọi: "+soPhut+" và số tiền bạn phải nộp là: "+phi+"(đồng)";
-    }else if(soPhut<=150){
-        //400 đồng cho mỗi phút gọi của 150 phút tiếp theo
-        phi=50*600+phiCoDinh+(soPhut-50)*400
-        document.getElementById('result7').innerHTML="Bạn đã gọi: "+soPhut+" và số tiền bạn phải nộp là: "+phi+"(đồng)";
-    }else{
-        //200 đồng cho bất kỳ mỗi phút nào sau 150 phút.
-        phi=50*600+phiCoDinh+100*400+(soPhut-150)*200;
-        document.getElementById('result7').innerHTML="Bạn đã gọi: "+soPhut+" phút và số tiền bạn phải nộp là: "+phi+"(đồng)";
+    function bai7(){
+        let a=document.getElementById('a1').value;
+        let b=document.getElementById('b1').value;
+        let c=document.getElementById('c1').value;
+        delta=(b*b)-4*a*c;
+        let x;
+        if(a==0){
+            if(b==0){
+                if(c==0){
+                    document.getElementById('result7').innerHTML="Phương trình vô số nghiệm";
+                }else{
+                    document.getElementById('result7').innerHTML="Phương trình vô nghiệm";
+                }
+            }else{
+                x=-c/b;
+                document.getElementById('result7').innerHTML="Phương trình có 1 nghiệm: "+x;
+            }
+        }else{
+            if(delta==0){
+                x=-b/2*a;
+                document.getElementById('result7').innerHTML="Phương trình có nghiệm kép: "+x;
+            }else if(delta>0){
+                x=(-b+Math.sqrt(delta))/2*a;
+                let y=(-b-Math.sqrt(delta))/2*a;
+                document.getElementById('result7').innerHTML="Phương trình có 2 nghiệm phân biệt: x1= " +x.toFixed(3)+ "; x2= "+y.toFixed(3);
+            }else{
+                document.getElementById('result7').innerHTML="Phương trình vô nghiệm";
+            }
+        }
     }
-}
+//Bài 8:
+
+    function bai8(){
+        let x=document.getElementById('tuoi').value;
+        if(x<120){
+            if(x>0){
+                document.getElementById('result8').innerHTML="Bạn đã "+x+" tuổi rồi"
+            }else{
+                document.getElementById('result8').innerHTML=x+" không phải là số tuổi"
+            }
+        }else{
+            document.getElementById('result8').innerHTML=x+" không phải là số tuổi"
+        }
+    }
+//Bài 9:
+
+    function bai9(){
+        let a=document.getElementById('soThuc1').value;
+        let b=document.getElementById('soThuc2').value;
+        let c=document.getElementById('soThuc3').value;
+        if(a>0){
+            if(b>0){
+                if(c>0){
+                    if(a+b>=c || a+c>=b || b+c>=a){
+                        document.getElementById('result9').innerHTML="Đây là hình tam giác";
+                    }else{
+                        document.getElementById('result9').innerHTML="Đây không phải là hình tam giác";
+                    }
+                }else{
+                    document.getElementById('result9').innerHTML="Đây không phải là hình tam giác";
+                }
+            }else{
+                document.getElementById('result9').innerHTML="Đây không phải là hình tam giác";
+            }
+        }else{
+            document.getElementById('result9').innerHTML="Đây không phải là hình tam giác";
+        }
+    }
+//Bài 10:
+    function bai10(){
+        let soDien=document.getElementById('dien').value;
+        let soTien;
+        let bac1=1678;
+        let bac2=1734;
+        let bac3=2014;
+        let bac4=2536;
+        let bac5=2834;
+        let bac6=2927;
+        if(soDien>0) {
+            if (soDien <= 50) {
+                soTien = soDien * bac1;
+                document.getElementById('result10').innerHTML = "Tiền điện của bạn là: " + soTien;
+            } else if (soDien <= 100) {
+                soTien = 50 * bac1 + (soDien - 50) * bac2;
+                document.getElementById('result10').innerHTML = "Tiền điện của bạn là: " + soTien;
+            } else if (soDien <= 200) {
+                soTien = 50 * bac1 + 50 * bac2 + (soDien - 100) * bac3;
+                document.getElementById('result10').innerHTML = "Tiền điện của bạn là: " + soTien;
+            } else if (soDien <= 300) {
+                soTien = 50 * bac1 + 50 * bac2 + 100*bac3+(soDien - 200) * bac4;
+                document.getElementById('result10').innerHTML = "Tiền điện của bạn là: " + soTien;
+            } else if (soDien <= 400) {
+                soTien = 50 * bac1 + 50 * bac2 + 100 * bac3 + 100 * bac4 + (soDien - 300) * bac5;
+                document.getElementById('result10').innerHTML = "Tiền điện của bạn là: " + soTien;
+            } else {
+                soTien = 50 * bac1 + 50 * bac2 + 100 * bac3 + 100 * bac4 + 100 * bac5 + (soDien - 400) * bac6;
+                document.getElementById('result10').innerHTML = "Tiền điện của bạn là: " + soTien;
+            }
+        }else{
+            document.getElementById('result10').innerHTML="Đây không phải số điện bạn đã dùng"
+        }
+    }
+//Bài 11:
+
+    function bai11(){
+        let thuNhap=document.getElementById('thuNhap').value;
+        let tienThue;
+        let bac1=0/100;
+        let bac2=5/100;
+        let bac3=10/100;
+        let bac4=15/100;
+        let bac5=20/100;
+        let bac6=25/100;
+        let bac7=30/100;
+        let bac8=35/100;
+        if(thuNhap<=4) {
+            tienThue=bac1*thuNhap;
+            document.getElementById('result11').innerHTML="Tiền thuế bạn cần phải trả là: "+tienThue.toFixed(3);
+        }else if(thuNhap<=6){
+            tienThue=4*bac1+(thuNhap-4)*bac2;
+            document.getElementById('result11').innerHTML="Tiền thuế bạn cần phải trả là: "+tienThue.toFixed(3);
+        }else if(thuNhap<=9){
+            tienThue=4*bac1+2*bac2+(thuNhap-6)*bac3;
+            document.getElementById('result11').innerHTML="Tiền thuế bạn cần phải trả là: "+tienThue.toFixed(3);
+        }else if(thuNhap<=14){
+            tienThue=4*bac1+2*bac2+3*bac3+(thuNhap-9)*bac4;
+            document.getElementById('result11').innerHTML="Tiền thuế bạn cần phải trả là: "+tienThue.toFixed(3);
+        }else if(thuNhap<=24){
+            tienThue=4*bac1+2*bac2+3*bac3+5*bac4+(thuNhap-14)*bac5;
+            document.getElementById('result11').innerHTML="Tiền thuế bạn cần phải trả là: "+tienThue.toFixed(3);
+        }else if(thuNhap<=44){
+            tienThue=4*bac1+2*bac2+3*bac3+5*bac4+10*bac5+(thuNhap-24)*bac6;
+            document.getElementById('result11').innerHTML="Tiền thuế bạn cần phải trả là: "+tienThue.toFixed(3);
+        }else if(thuNhap<=84){
+            tienThue=4*bac1+2*bac2+3*bac3+5*bac4+10*bac5+20*bac6+(thuNhap-44)*bac7;
+            document.getElementById('result11').innerHTML="Tiền thuế bạn cần phải trả là: "+tienThue.toFixed(3);
+        }else{
+            tienThue=4*bac1+2*bac2+3*bac3+5*bac4+10*bac5+20*bac6+40*bac7+(thuNhap-84)*bac8;
+            document.getElementById('result11').innerHTML="Tiền thuế bạn cần phải trả là: "+tienThue.toFixed(3);
+        }
+    }
+//Bài 12:
+
+    function  bai12(){
+        let tien=parseFloat(document.getElementById('tienBanDau').value);
+        let thang=parseFloat(document.getElementById('thang').value);
+        let laiXuat=parseFloat(document.getElementById('laiXuat').value);
+        let laiNganHang =(tien*Math.pow((1+(laiXuat/100)),(thang/12)));
+        document.getElementById('result12').innerHTML="Lãi xuất ngân hàng là: "+laiNganHang.toFixed(3)+" VNĐ"
+    }
+
 </script>
