@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+    <style>
+        table{
+            border: 2px solid black;
+        }
+
+        th{
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" class="table">
+    <tr>
+        <th colspan="4">
+            <input type="text" id="result">
+        </th>
+    </tr>
+    <tr>
+        <th class="btn">
+            <input type="button" onclick="num('1');" value="1">
+        </th>
+        <th class="btn">
+            <input type="button" onclick="num('2');" value="2">
+        </th>
+        <th class="btn">
+            <input type="button" onclick="num('3');" value="3">
+        </th>
+        <th class="btn">
+            <input type="button" onclick="num('+');" value="+">
+        </th>
+    </tr>
+
+    <tr>
+        <th class="btn">
+            <input type="button" onclick="num('4');" value="4">
+        </th>
+        <th class="btn">
+            <input type="button" onclick="num('5');" value="5">
+        </th>
+        <th class="btn">
+            <input type="button" onclick="num('6');" value="6">
+        </th>
+        <th class="btn">
+            <input type="button" onclick="num('-');" value="-">
+        </th>
+    </tr>
+
+    <tr>
+        <th class="btn">
+            <input type="button" onclick="num('7');" value="7">
+        </th>
+        <th class="btn">
+            <input type="button" onclick="num('8');" value="8">
+        </th>
+        <th class="btn">
+            <input type="button" onclick="num('9');" value="9">
+        </th>
+        <th class="btn">
+            <input type="button" onclick="num('*');" value="x">
+        </th>
+    </tr>
+
+    <tr>
+        <th class="btn">
+            <input type="button" onclick="del();" value="C">
+        </th>
+        <th class="btn">
+            <input type="button" onclick="num('0');" value="0">
+        </th>
+        <th class="btn">
+            <input type="button" onclick="cal();" id="cal" value="=">
+        </th>
+        <th class="btn">
+            <input type="button" onclick="num('/');" value="/">
+        </th>
+    </tr>
+</table>
+</body>
+</html>
+
+<script>
+    //Chức năng hiển thị các số
+    function num(value){
+        let num = document.getElementById('result').value += value;
+    }
+    //Chức năng tính toán
+    function cal(){
+        let cal = document.getElementById('result').value;
+        document.getElementById('result').value = eval(cal);
+    }
+    //Chức năng xóa
+    function del(){
+        document.getElementById('result').value=" "
+    }
+</script>
