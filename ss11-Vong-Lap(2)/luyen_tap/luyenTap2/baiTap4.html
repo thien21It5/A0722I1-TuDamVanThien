@@ -11,13 +11,14 @@
 </body>
 </html>
 <script>
-    for (var i = 1; i <= 7; i++) {
-        for (var j = 1; j <= 21; j++)
-            if (i == 1 || j == 1 || i == 7 || j == 21) {
-                document.writeln('*');
-            } else document.writeln('&nbsp&nbsp');
-        document.writeln('<br>');
-        j = 1;
-
+    for(let x=0;x<7;x++){
+        for(let y=0;y<21;y++) {
+            if (x==0 || y==0 ||  y==20 || x==6) {
+                document.write("*")
+            } else {
+                document.write("&nbsp&nbsp");
+            }
+        }
+        document.write("<br>")
     }
 </script>

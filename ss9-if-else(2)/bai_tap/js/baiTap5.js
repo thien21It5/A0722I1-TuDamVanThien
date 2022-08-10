@@ -1,10 +1,10 @@
 function clickYes(){
-    alert("Yes. you are right ")
+    alert("Yes. You are right ")
 }
 function clickNo(){
     let w=Math.floor(Math.random() * window.innerWidth);
     let h=Math.floor(Math.random() * window.innerHeight);
 
-    document.getElementById('no').style.left= w +"px"
-    document.getElementById('no').style.top= h +"px"
+    document.getElementById('no').style.left= w +"px";
+    document.getElementById('no').style.top= h +"px";
 }
