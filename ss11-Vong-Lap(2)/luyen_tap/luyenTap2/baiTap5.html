@@ -6,15 +6,16 @@
 </head>
 <body>
 <!--Bài 5: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.-->
-
+<h3>Bài 5: Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.</h3>
+<p id="result"></p>
 </body>
 </html>
 
 <script>
-    var money=prompt('so tien ban dau');
-    var month=prompt('so thang cho vay');
-    var l=prompt('lai suat');
-    var s=0;
+    let money=prompt('so tien ban dau');
+    let month=prompt('so thang cho vay');
+    let l=prompt('lai suat');
+    let s;
     s=Math.round(money*Math.pow(1+month,l),2) ;
-    confirm('tong lai suat kep la '+s);
+    document.getElementById("result").innerText="Lãi xuất ngân hàng: " +s;
 </script>

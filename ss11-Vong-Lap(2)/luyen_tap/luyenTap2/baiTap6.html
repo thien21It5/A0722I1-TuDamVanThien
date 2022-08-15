@@ -11,16 +11,14 @@
 </html>
 
 <script>
-    for (var i=1;i<=5;i++)
-    {
-        for (var j=1;j<=7;j++){
-            if( (j==1&&i==1)||(j==4&&i==1)||(j==7&&i==1)||(j==7&&i==3)||(j==7&&i==4)||(j==7&&i==5)||(j==6&&i==4)||(j==6&&i==5)||(j==5&&i==5)||(j==1&&i==3)||(j==1&&i==4)||(j==1&&i==5)||(j==2&&i==4)||(j==2&&i==5)||(j==3&&i==5))
-                document.writeln('&nbsp&nbsp');
-            else
-                document.writeln('*');
+    for (let x=0;x<6;x++){
+        for(let y=0;y<7;y++){
+            if((x==0 && y==0) || (x==0 && y==3) || (x==0 && y==6) || (x==3 && y==0) || (x==4 && y==0) || (x==4 && y==1) || (x==5 && y==0) || (x==5 && y==1) || (x==5 && y==2) || (x==3 && y==6) || (x==4 && y==6) || (x==4 && y==5) || (x==5 && y==6) || (x==5 && y==5) || (x==5 && y==4)){
+                document.writeln("&nbsp&nbsp");
+            }else{
+                document.writeln("*");
+            }
         }
-
-        document.writeln('<br>');
-        j=1;
+        document.write("<br>")
     }
 </script>
