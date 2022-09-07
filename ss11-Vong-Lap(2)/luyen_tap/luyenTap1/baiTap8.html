@@ -13,36 +13,36 @@
 
 <script>
     function clickMe(){
-        // let phamVi =parseInt(prompt("Trò chơi đoán số từ 0- "));
-        // let nhapSo =parseInt(prompt("Nhập vào số muốn đoán"));
-        // let soRandom;
-        // if(phamVi){
-        //     soRandom = Math.floor(Math.random()*phamVi);
-        //     console.log(soRandom);
-        //     if (soRandom == nhapSo){
-        //         alert("Bạn đã đoán đúng");
-        //     }else{
-        //         while (soRandom != nhapSo){
-        //             alert("Bạn đã đoán sai")
-        //             nhapSo=+prompt("Nhập vào số muốn đoán")
-        //         }
-        //         alert("Bạn đã đoán đúng!")
-        //     }
-        // }
-
-        let max = +prompt("Nhập Max");
-        let min = +prompt("Nhập Min");
-        let ranDom = Math.floor(Math.random() * (max - min + 1) ) + min;
-        console.log(ranDom)
-        for (i=0;i<3;i++){
-            let nhap = prompt("Nhập số bạn chọn")
-            if(nhap != ranDom){
-                alert("Bạn chọn sai")
+        let phamVi =parseInt(prompt("Trò chơi đoán số từ 0- "));
+        let nhapSo =parseInt(prompt("Nhập vào số muốn đoán"));
+        let soRandom;
+        if(phamVi){
+            soRandom = Math.floor(Math.random()*phamVi);
+            console.log(soRandom);
+            if (soRandom == nhapSo){
+                alert("Bạn đã đoán đúng");
             }else{
-                alert("Bạn chọn đúng");
-                break;
+                while (soRandom != nhapSo){
+                    alert("Bạn đã đoán sai")
+                    nhapSo=+prompt("Nhập vào số muốn đoán")
+                }
+                alert("Bạn đã đoán đúng!")
             }
         }
 
-    }
+    //     let max = +prompt("Nhập Max");
+    //     let min = +prompt("Nhập Min");
+    //     let ranDom = Math.floor(Math.random() * (max - min + 1) ) + min;
+    //     console.log(ranDom)
+    //     for (i=0;i<3;i++){
+    //         let nhap = prompt("Nhập số bạn chọn")
+    //         if(nhap != ranDom){
+    //             alert("Bạn chọn sai")
+    //         }else{
+    //             alert("Bạn chọn đúng");
+    //             break;
+    //         }
+    //     }
+    //
+     }
 </script>

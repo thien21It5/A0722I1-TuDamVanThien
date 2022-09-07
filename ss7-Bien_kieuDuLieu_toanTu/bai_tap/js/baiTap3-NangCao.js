@@ -6,7 +6,7 @@ function num(value){
 function del(){
     document.getElementById('result').value="";
 }
-//
+//Tính các giá trị
 function cal(){
     let x = document.getElementById('result').value;
 

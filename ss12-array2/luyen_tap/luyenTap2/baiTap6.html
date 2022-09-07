@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6</title>
+</head>
+<body>
+</body>
+</html>
+
+
+<script>
+    let mang = prompt("Nhập mảng ký tự bất kỳ: ");
+    let arr = mang.split(" ");
+    document.write("Mảng ban đầu là: "+arr+"<br>")
+    for(let i=0;i<arr.length;i++){
+        if(arr[i] === "-"){
+            arr[i] ="_"
+        }
+    }
+    document.write("Mảng sau khi thay đổi là: "+arr);
+</script>

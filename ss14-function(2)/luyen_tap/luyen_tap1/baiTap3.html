@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+    function inputParameters(x,y){
+        let result = "";
+        if(x > y){
+            result = "Số thứ nhất lớn hơn số thứ hai"
+        }else{
+            result = x+y;
+        }
+        return result;
+    }
+
+    let so1 =+prompt("Nhập số thứ nhất");
+    let so2 =+prompt("Nhập số thứ hai");
+    let ketqua = inputParameters(so1,so2)
+    alert(ketqua)
+</script>

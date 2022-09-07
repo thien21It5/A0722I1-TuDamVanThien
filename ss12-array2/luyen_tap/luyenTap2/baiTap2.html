@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+  let mang= Array('c', 's', 'c', '2', '6', '1');
+  let begin =0;
+  let end =mang.length-1
+  while(begin < end){
+      let empty = mang[begin];
+      mang[begin] = mang[end];
+      mang[end] = empty;
+      begin++;
+      end--;
+  }
+  document.write("Mảng sau khi đảo ngược là: "+ mang.join(""));
+</script>

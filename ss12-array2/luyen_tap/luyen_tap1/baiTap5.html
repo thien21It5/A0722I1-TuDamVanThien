@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 5</title>
+</head>
+<body>
+<h3>Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi</h3>
+<div>
+    <h4>Chương trình đảo ngược mảng số nguyên</h4>
+    <input type="text" id="nhap" placeholder="Nhập số nguyên" width="200px">
+    <br><br>
+    <button onclick="kiemTra();">Kiểm tra</button>
+    <p id="result"></p>
+</div>
+</body>
+</html>
+
+<script>
+    function kiemTra(){
+        let n=document.getElementById('nhap').value;
+        arr=n.split("");
+        total=0;
+        for(let i=0;i<arr.length;i++){
+            if(arr[i] ==="u"|| arr[i] ==="e" || arr[i] ==="o" || arr[i] ==="a" || arr[i] ==="i"){
+                      console.log(arr[i]+" là nguyên âm ở vị trí thứ: "+i)
+                total +=1;
+                      document.getElementById("result").innerHTML="Số nguyên âm trong chuỗi là: "+total;
+            }
+        }
+    }
+</script>

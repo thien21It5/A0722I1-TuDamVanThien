@@ -5,25 +5,30 @@
     <title>Từ điển</title>
 </head>
 <body>
-<div id="div">
-    <input type="text" id="nhap" placeholder="Nhập ký tự">
-    <br>
-    <br>
-    <button onclick="hienThi();"></button>
+
+    <h3>TỪ ĐIỂN ANH-VIỆT</h3>
+    <input type="text" id="nhap" placeholder="Nhập phần tử">
+    <button onclick="timKiem();">Tìm</button>
     <p id="result"></p>
-</div>
+
 </body>
 </html>
 
 <script>
-  function hienThi(){
-      let kiTu = document.getElementById("nhap").value;
-      let anh = ["Name", 'class', 'id'];
-      let viet =['tên', 'lớp', ' số thứ tự'];
-      for (let x=0; x<=kiTu.length; x++){
-          if(kitu.length)
-      }
-  }
+    function timKiem(){
+        let nhap=document.getElementById("nhap").value;
+        let tiengAnh =["One" , "Two" , "Three" , "Four" , "Five"];
+        let tiengViet =["Một" , "Hai" , "Ba" , "Bốn" , "Năm"];
+// Tạo vòng lập để tìm kiếm giá trị
+        for(let i=0;i < tiengAnh.length;i++){
+            if(nhap === tiengAnh[i]){
+                document.getElementById("result").innerHTML= tiengViet[i];
+                break;
+            }else{
+                document.getElementById("result").innerHTML="Không tìm thấy kết quả";
+            }
+        }
+    }
 </script>
 
 

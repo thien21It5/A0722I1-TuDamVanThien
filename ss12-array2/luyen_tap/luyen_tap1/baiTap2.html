@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<h3>Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau.
+    Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng và vị trí của phần tử đó.</h3>
+</body>
+</html>
+
+<script>
+    let soNguyen = Array(1,12,3,4,6,76,43,5,23,32);
+    let max = soNguyen[0];
+    let viTri =0;
+    for(let i=0; i<soNguyen.length; i++){
+        if(soNguyen[i] > max){
+            max = soNguyen[i];
+//dùng indexOf để lấy ra vị trí của phần tử trong mảng
+            viTri = soNguyen.indexOf(soNguyen[i])
+        }
+    }
+    document.write("Số lớn nhất trong dãy số là: "+max+"<br>");
+    document.write("Vị trí của phần tử là: "+ viTri);
+</script>

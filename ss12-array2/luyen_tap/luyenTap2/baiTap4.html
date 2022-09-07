@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    let mang = prompt("Nhập số phần tử của chuổi: ");
+    let arr =[];
+    for(let i=0;i<mang ;i++){
+        arr[i]= prompt("Nhập phần tử thứ "+ i);
+    }
+    document.write("Mảng của hàm là : "+arr+"<br>");
+//kiểm tra xem có bao nhiêu ký tự trong mảng trên
+    let s=0;
+    for(let x=0;x<arr.length;x++){
+        if(isNaN(arr[x])){
+            s+=1;
+        }
+    }
+    document.write("Có "+s+" ký tự trong mảng: "+arr);
+</script>

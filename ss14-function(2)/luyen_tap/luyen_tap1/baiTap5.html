@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+    let arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+
+    function search(sao) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (sao == arr1[i]) {
+                return alert(arr2[i]);
+            } else {
+                return alert('Không tìm thấy');
+            }
+        }
+    }
+
+    let a = prompt('Nhập chòm sao: ');
+    search(a);
+</script>

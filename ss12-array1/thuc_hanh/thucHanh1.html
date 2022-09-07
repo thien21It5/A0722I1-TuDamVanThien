@@ -22,16 +22,16 @@
 
  function addElement(){
      array[x] = document.getElementById('nhap').value;
-     alert=("Element: "+array[x]+" Added at index "+x);
+     alert("Element: " + array[x] + " Added at index " + x);
      x++;
-     document.getElementById("nhap").value="";
+     document.getElementById("nhap").value=" ";
  }
 
  function displayElement(){
-     let e="<hr/>";
-     for(let i=0;i<array.length;i++){
-         e +="Element " + i + " = " +array[i]+ "<br/>";
+     let e = "<hr/>";
+     for (let i = 0; i < array.length; i++) {
+         e += "Element " + i + " = " + array[i] + "<br/>";
      }
-     document.getElementById("result").innerHTML= e;
+     document.getElementById("result").innerHTML = e;
  }
 </script>

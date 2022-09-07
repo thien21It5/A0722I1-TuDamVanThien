@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+    let arrA = new Array(10);
+    let arrB = new Array(10);
+    for(let i=0;i<=arrA.length-1;i++){
+        arrA[i] = prompt("Nhập phần tử thứ "+i+" của mảng A");
+    }
+    for(let j=0;j<=arrB.length-1;j++){
+        arrB[j] = prompt("Nhập phần tử thứ "+j+" của mảng B");
+    }
+    document.write("Mảng A gồm 10 phần tử là: "+arrA+"<br>");
+    document.write("Mảng B gồm 10 phần tử là: "+arrB+"<br>");
+    let arrC = new Array(20);
+    // arrC = arrA.concat(arrB)
+    for(let x=0;x<20;x++){
+        if(x<10){
+            arrC[x] = arrA[x];
+        }else{
+            arrC[x] = arrB[x-10]
+        }
+    }
+    document.write("Phần tử trong mảng C là: "+arrC)
+</script>

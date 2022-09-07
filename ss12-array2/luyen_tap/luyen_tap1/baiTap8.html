@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    let nhap = parseInt(prompt("Nhập số phần tử", ''));
+    let arr = [];
+    for (let i = 0; i <= nhap-1; i++) {
+        arr[i] = parseInt(prompt("Phan tu thu " + i));
+    }
+    document.write("Hiển thị mảng: "+arr+"<br>")
+    let temp;
+    for (let x = 0; x < nhap - 1; x++) {
+        for (let y = x + 1; y < nhap; y++) {
+            if (arr[x] < arr[y]) {
+                temp = arr[x];
+                arr[x] = arr[y];
+                arr[y] = temp;
+            }
+        }
+    }
+    document.write("Hiển thị mảng đã được sắp xếp: " +arr);
+
+</script>

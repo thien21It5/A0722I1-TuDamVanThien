@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    let n =  prompt("Nhập 1 mảng số nguyên bất kỳ: ");
+    let v =  prompt("Nhập vào 1 phần tử số nguyên: ");
+    let flag;
+    arr = n.split(" ");
+    document.write("Mảng đầu là: " +arr+ "<br>")
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] === v) {
+            for (let n=i;n < arr.length;n++) {
+                arr[n] = arr[n + 1];
+            }
+            arr[arr.length-1]=0;
+            document.write("Mảng sau khi xóa phần tử V: " + arr);
+            }else{
+                    flag = false;
+                }
+            }
+// không được dùng các hàm hiển thị ở trong vòng lập vì nếu làm vậy sẽ khiến cho hàm hiển thị nhiều lần
+    //vì vậy ta cần dùng một lệnh cờ để dùng if else ngoài vòng lặp
+    if(flag === false){
+        document.write("Không có phần tử V trong mảng");
+    }
+
+</script>
