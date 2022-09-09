@@ -13,15 +13,22 @@
     let arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
 
     function search(sao) {
+        let result = " ";
+        let star = " "
+        let flag;
         for (let i = 0; i < arr1.length; i++) {
-            if (sao == arr1[i]) {
-                return alert(arr2[i]);
-            } else {
-                return alert('Không tìm thấy');
+            if (sao === arr1[i]) {
+                star = arr2[i];
+                flag = true;
             }
+        if(flag === true){
+            result = star;
+        }else{
+            result = "Không tìm thấy!!!"
         }
+        }
+        return result;
     }
-
     let a = prompt('Nhập chòm sao: ');
-    search(a);
+    alert(search(a));
 </script>

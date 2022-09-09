@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    function reVerse(a,b){
+        let c = a;
+        a = b;
+        b = c;
+        let result = a+" , "+b
+        return result;
+    }
+
+    let x = +prompt("Nhập số bất kỳ đầu tiên: ");
+    let y = +prompt("Nhập số bất kỳ thứ hai: ");
+    document.write("Vị trí hai số ban đầu là: "+x+" , "+y+"<br>")
+    document.write("Vị trí hai số sau khi đảo là: "+reVerse(x,y));
+</script>

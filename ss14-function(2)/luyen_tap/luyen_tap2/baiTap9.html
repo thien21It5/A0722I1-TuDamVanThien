@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+    function checkC(arr,a){
+        let result="";
+        let s=0;
+        let count =0;
+        for(let i =0;i<arr.length;i++) {
+            if (arr[i]=== a) {
+                s+=1;
+                count++;
+            }
+        }
+        if(count !==0){
+            result="Ký tự của "+a+" xuất hiện trong ["+arr+"]: "+s+" lần.";
+        }else{
+            result="-1";
+        }
+        return result;
+    }
+
+    let nhap = prompt("Nhập vào số ký tự của mảng");
+    let array=[];
+    for(let j=0;j<nhap-1;j++){
+        array[j] = prompt("Nhập phần tử thứ "+j+":");
+    }
+    document.write("Mảng mới nhập là: "+array+"<br>");
+
+    let n =prompt("Nhập một ký tự bất kỳ: ");
+    document.write("Ký tự vừa nhập là: "+n+"<br>");
+
+    document.write(checkC(array,n));
+</script>

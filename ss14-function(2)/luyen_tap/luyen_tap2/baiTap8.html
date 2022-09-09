@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 8</title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+  function reVerse(arr){
+    let start = 0;
+    let end = arr.length-1;
+    while (start<end){
+      let x=" ";
+      x = arr[start];
+      arr[start] = arr[end];
+      arr[end] = x;
+     start++;
+     end--;
+    }
+    return arr;
+  }
+
+
+  let mang = prompt("Nhập một mảng bất kỳ: ");
+  let array = mang.split(" ")
+  document.write("Mảng đầu: "+ array+"<br>");
+  document.write("Mảng sau khi đảo là: "+reVerse(array));
+</script>

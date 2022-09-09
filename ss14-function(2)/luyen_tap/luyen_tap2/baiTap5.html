@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    function compareInterger(a,b,c){
+        let result="";
+        if(a<b){
+            if(a<c){
+                result=a;
+            }else{
+                result=c;
+            }
+        }else{
+            if(b>c){
+                result=c;
+            }else{
+                result=b;
+            }
+        }
+        return result;
+    }
+
+    let x = prompt("Nhập số đầu tiên: ");
+    let y = prompt("Nhập số thứ hai: ");
+    let z = prompt("Nhập số thứ ba: ");
+    document.write("Ba số lần lượt là: "+x+", "+y+", "+z);
+
+    alert("Số nhỏ nhất trong ba số là: "+compareInterger(x,y,z));
+</script>

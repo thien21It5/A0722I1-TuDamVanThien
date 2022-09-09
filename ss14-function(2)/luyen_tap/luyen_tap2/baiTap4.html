@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    function kiemTra(x){
+        let result=" "
+        if(isNaN(x)){
+            result="False";
+        }else{
+            result="True";
+        }
+        return result;
+    }
+
+    let n = prompt("Nhập một ký tự bất kỳ: ");
+    alert("Kí tự đó có phải ký tự số không? "+kiemTra(n));
+</script>
