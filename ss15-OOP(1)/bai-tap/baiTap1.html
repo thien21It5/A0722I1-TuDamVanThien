@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả hình chữ nhật</title>
+</head>
+<body>
+<p id="result"></p><br>
+<canvas id="myCanvas" width="1368px" height="768px">
+</canvas>
+</body>
+</html>
+
+<script>
+  let Rectangle = function (width, height){
+      this.width = width;
+      this.height = height;
+      
+      this.getWidth = function (){
+          return this.width;
+      }
+      this.getHeight = function (){
+          return this.height;
+      }
+      
+      this.getArea = function (){
+          return width * height;
+      }
+      
+      this.getPerimeter = function (){
+          return (width + height)*2;
+      }
+  };
+    let hcn = document.getElementById("myCanvas").getContext("2d");
+    let rectangle = new Rectangle(150, 200);
+    //document.getElementById("result").innerHTML = "Chiều dài= " +rectangle.width+ "; Chiều rộng= "+rectangle.height+"<br>";
+    document.getElementById("result").innerHTML = "Diện tích= " +rectangle.getArea()+"<br>"+" Chu vi= "+rectangle.getPerimeter()+"<br>";
+    hcn.fillRect(200, 200, rectangle.height, rectangle.width);
+    hcn.strokeRect();
+    hcn.clearRect();
+</script>

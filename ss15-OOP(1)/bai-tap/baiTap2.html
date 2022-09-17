@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xây dựng lớp mô tả Temperature</title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+    let Temperature = function (celsius){
+        this.cel = celsius;
+
+        this.getCel = function (){
+            return (celsius * (9/5))+32;
+        }
+
+        this.getKelvin = function (){
+            return this.cel *273.15;
+        }
+    }
+    let temperature = new Temperature(100);
+    alert(temperature.cel+ " Chuyển sang độ Kelvin là: "+ temperature.getKelvin()+"°F");
+    alert(temperature.cel+ " Chuyển sang độ F là: "+temperature.getCel()+"K");
+</script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+</body>
+</html>
+
+<script>
+    // let h =5;
+    // for (let i = 0; i < h; i++) {
+    //     for (let j = 0; j < h; j++) {
+    //         if (i==0 && j==0 || i==1 && j==0 || i==1 && j==1 || i==2 && j==0 || i==2 && j==2 || i==3 && j==0 || i==3 && j==3 || i==4 && j==0 || i==4 && j==1|| i==4 && j==2|| i==4 && j==3|| i==4 && j==4) {
+    //             document.write("*")
+    //         } else {
+    //             document.write("&nbsp&nbsp");
+    //         }
+    //     }
+    //     document.write("<br>");
+    //     document.write("<br>");
+    // }
+
+    //cách 2:
+
+    var h =5;
+    for (let i = 0; i < h; i++) {
+        for (let j = 0; j <= i; j++) {
+            if(i==0 || i ==(h-1)){
+                document.write("*")
+            }else if(j==0 || j==i){
+                document.write("*");
+            }else{
+                document.write("&nbsp&nbsp")
+            }
+        }
+        document.write("<br>")
+    }
+</script>
